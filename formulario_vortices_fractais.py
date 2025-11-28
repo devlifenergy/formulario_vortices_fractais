@@ -265,7 +265,7 @@ if st.button("Finalizar e Enviar Respostas", type="primary"):
 
 # --- BOTÃO INVISÍVEL PARA PINGER ---
 placeholder = st.empty()
-with placeholder.container():
+with placeholder:
     st.markdown('<div id="autoclick-div">', unsafe_allow_html=True) 
     if st.button("Ping Button", key="autoclick_button"):
         print("Ping button clicked by automation.")
